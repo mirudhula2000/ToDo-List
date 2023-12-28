@@ -1,0 +1,25 @@
+.body{
+    background-color:aquamarine;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.heading{
+    color:darkred;
+}
+.tagline{
+    color:color-mix(in hsl shorter hue, brown 40%, gold 60%);
+    font-weight: bold;
+}
+.add-btn:hover{
+    background-color:beige;
+    color: crimson;
+    font-weight: bold;  
+}
+.deletion.btn{
+    background-color:beige;
+    color: crimson;
+    font-weight: bold;  
+
+}

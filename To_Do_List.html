@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DoDo</title>
+    <link rel="stylesheet" href="To_Do_List.css">
+  </head>
+  <body class="body">
+    <h1 class="heading">DoDo</h1>
+    <p class="tagline">Do it Today or Tomorrow...but never FORGET!!!</p>
+    <div class="division">
+      <input id="list" />
+      <button class="add-btn" onclick="add()">ADD</button>
+    </div>
+    <div class="lists">
+      <ol id="listcontainer"></ol>
+    </div>
+  </body>
+  <script>
+    var ul = document.getElementById("listcontainer");
+    var input = document.getElementById("list");
+    const add = () => {
+      var listItem = document.createElement("li");
+      listItem.innerHTML =
+        input.value + " " + "<button onClick={deletion(event)}>Delete</button>";
+      ul.append(listItem);
+    };
+    const deletion = (event) => {
+      event.target.parentElement.remove();
+    };
+  </script>
+</html>
